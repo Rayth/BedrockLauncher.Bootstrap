@@ -84,12 +84,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\LauncherIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LauncherIcon1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
