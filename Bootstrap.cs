@@ -125,9 +125,12 @@ namespace BedrockLauncher.Bootstrap
 
             void StartProcess(string path)
             {
-                var startInfo = new ProcessStartInfo(path);
-                startInfo.Arguments = string.Join(" ", Environment.GetCommandLineArgs());
-                startInfo.UseShellExecute = true;
+                var startInfo = new ProcessStartInfo(path)
+                {
+                    //Arguments = string.Join(" ", Environment.GetCommandLineArgs()),
+                    UseShellExecute = true,
+                    Verb = "runas"
+                };
                 Process.Start(startInfo);
                 Application.Exit();
             }
