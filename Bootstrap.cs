@@ -20,7 +20,7 @@ namespace BedrockLauncher.Bootstrap
         {
             Thread.Sleep(500);
             bool result = false;
-            string minimumVersionS = "6.0";
+            string minimumVersionS = "8.0";
             try
             {
                 using (RegistryKey key = Registry.LocalMachine.OpenSubKey("SOFTWARE\\WOW6432Node\\dotnet\\Setup\\InstalledVersions\\x64\\sharedfx\\Microsoft.WindowsDesktop.App"))
